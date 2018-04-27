@@ -91,6 +91,10 @@ app.get('/profile',
     res.render('profile', { user: req.user });
   });
 
-app.listen(8000,function(){
-    console.log("server is running at 8000");
-})
+var port = process.env.PORT || 8000;
+
+// starting express server
+app.listen(port, function () {
+    console.log("Server is running at : http://localhost:" + port);
+});
+
