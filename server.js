@@ -15,7 +15,7 @@ var app = express();
 passport.use(new Strategy({
     consumerKey: "XNBls7Zb7trmq97t1DlK56eyp",
     consumerSecret: "zLro68VdwqXNbSYZF4J9qlIWAQT1w7c4Zsc1EsfzndjIY1csFf",
-    callbackURL: 'http://127.0.0.1:3000/login/twitter/return'
+    callbackURL: 'https://twitter0991.herokuapp.com/login/twitter/return'
   },
   function(token, tokenSecret, profile, cb) {
     // In this example, the user's Twitter profile is supplied as the user
